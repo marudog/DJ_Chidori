@@ -551,7 +551,7 @@ var displayAccuracy = function (accuracy) { //현재 판정 결과를 화면에 
   document.querySelector(".hit__accuracy").remove();
   accuracyText.classList.add("hit__accuracy");
   accuracyText.classList.add("hit__accuracy--" + accuracy);
-  accuracyText.innerHTML = accuracy;
+  accuracyText.innerHTML = accuracy.toUpperCase();
   document.querySelector(".hit").appendChild(accuracyText);
 };
 
